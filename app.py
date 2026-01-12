@@ -39,8 +39,9 @@ def transform_text(text):
 # Load trained model and vectorizer
 import pickle
 
-model = pickle.load(open(r"C:\\Users\\ASUS\\Desktop\\SMS Spam Classifier\\model.pkl","rb"))
-tfidf = pickle.load(open(r"C:\\Users\\ASUS\\Desktop\\SMS Spam Classifier\\vectorizer.pkl","rb"))
+model = pickle.load(open("model.pkl","rb"))
+tfidf = pickle.load(open("vectorizer.pkl","rb"))
+
 
 
 # Streamlit UI
